@@ -50,6 +50,8 @@ To build image with sample
    ```
 
    Then, open your browser and navigate to `http://localhost:8081`.
+
+   
    3.2 On Docker desktop k8s
 
    Navigate to `http://localhost:32001`.
