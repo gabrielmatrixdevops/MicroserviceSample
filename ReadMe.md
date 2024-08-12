@@ -46,7 +46,7 @@ To build image with sample
    To access the microservice, you can use port forwarding:
 
    ```sh
-   kubectl port-forward service/microservice 8080:8080 -n microservice-namespace
+   kubectl port-forward service/microservice 8081:8081 -n microservice-namespace
    ```
 
    Then, open your browser and navigate to `http://localhost:8081`.
