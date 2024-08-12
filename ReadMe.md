@@ -40,7 +40,7 @@ To build image with sample
 
 3. **Access the Microservice**
 
-3.1 On k8s
+   3.1 On k8s
    Update file yaml\SampleSvc.yaml to be clusterdip service and change remove nodePort
    
    To access the microservice, you can use port forwarding:
@@ -50,7 +50,7 @@ To build image with sample
    ```
 
    Then, open your browser and navigate to `http://localhost:8081`.
-3.2 On Docker desktop k8s
+   3.2 On Docker desktop k8s
 
    Navigate to `http://localhost:32001`.
    
