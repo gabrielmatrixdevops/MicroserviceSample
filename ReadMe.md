@@ -40,14 +40,20 @@ To build image with sample
 
 3. **Access the Microservice**
 
+3.1 On k8s
+   Update file yaml\SampleSvc.yaml to be clusterdip service and change remove nodePort
+   
    To access the microservice, you can use port forwarding:
 
    ```sh
    kubectl port-forward service/microservice 8080:8080 -n microservice-namespace
    ```
 
-   Then, open your browser and navigate to `http://localhost:8080`.
+   Then, open your browser and navigate to `http://localhost:8081`.
+3.2 On Docker desktop k8s
 
+   Navigate to `http://localhost:32001`.
+   
 ### Environment Variables
 
 - `RABBITMQ_HOST`: The hostname of the RabbitMQ service.
