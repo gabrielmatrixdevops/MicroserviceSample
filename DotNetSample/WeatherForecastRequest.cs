@@ -1,0 +1,1 @@
+record WeatherForecastRequest(string ReqiestId);
