@@ -1,0 +1,15 @@
+build:
+  result:
+    context: DotNetSample
+    dockerfile: Dockerfile
+
+deploy:
+  - helm upgrade --install dotnetsample chart --set image=${OKTETO_BUILD_VOTE_IMAGE}
+
+dev:
+  vote:
+    command: dotnet DotNetSample.dll
+    sync:
+      - /app
+    persistentVolume:
+      enabled: false
