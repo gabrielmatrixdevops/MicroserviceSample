@@ -24,6 +24,8 @@ FROM base AS final
 WORKDIR /app
 COPY --from=build /root/.aspnet/https /root/.aspnet/https
 COPY --from=publish /app/publish .
+EXPOSE 8080
+EXPOSE 8081
 ENV ASPNETCORE_URLS="https://+:8081;http://+:8080"
 ENV ASPNETCORE_Kestrel__Certificates__Default__Password="password"
 ENV ASPNETCORE_Kestrel__Certificates__Default__Path="/root/.aspnet/https/aspnetapp.pfx"
