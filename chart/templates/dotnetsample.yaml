@@ -120,5 +120,5 @@ spec:
                 name: dotnetsample
                 port:
                   number: 8081
-            path: /
+            path: /weatherforecast
             pathType: ImplementationSpecific
