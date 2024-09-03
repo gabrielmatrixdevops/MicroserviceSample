@@ -4,7 +4,7 @@ build:
     dockerfile: Dockerfile
 
 deploy:
-  - helm upgrade --install dotnetsample chart --set image=${OKTETO_BUILD_DOTNETSAMPLE_IMAGE} --set namespace=${OKTETO_NAMESPACE}
+  - helm upgrade --install dotnetsample chart --set image=${OKTETO_BUILD_DOTNETSAMPLE_IMAGE}
 
 dev:
   dotnetsample:

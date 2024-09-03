@@ -89,7 +89,7 @@ spec:
               memory: "512Mi"
           env:
             - name: RABBITMQ_HOST
-              value: "rabbitmq.{{ .Values.namespace }}.svc.cluster.local"
+              value: "rabbitmq"
             - name: RABBITMQ_PORT
               value: "5672"
             - name: "ASPNETCORE_HTTPS_PORTS"

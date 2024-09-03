@@ -4,4 +4,3 @@
 
 replicaCount: 1
 image: okteto.dev/dotnetsample
-namespace: 
